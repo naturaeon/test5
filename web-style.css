@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+}
+
+
+
+
+/* Topbar container */
+.topbar {
+    display: flex;                   /* Enable Flexbox */
+    align-items: center;             /* Vertically align items */
+    justify-content: center;         /* Center the logo in the middle */
+    background-color: #333;          /* Dark background color */
+    padding: 10px 20px;              /* Add space inside the topbar */
+    position: relative;              /* Allows absolute positioning for the button */
+    height: 60px;                    /* Fixed height for the topbar */
+  }
+  
+  /* Logo styling */
+  .logo {
+    font-size: 20px;                 /* Larger font for the logo */
+    font-weight: bold;               /* Bold text */
+    color: white;                    /* White text color */
+    position: absolute;              /* Use absolute positioning to center it */
+    left: 50%;                       /* Center the logo horizontally */
+    transform: translateX(-50%);     /* Adjust for perfect centering */
+  }
+  
+  /* Contact button */
+  .contact-button {
+    position: absolute;              /* Position the button absolutely within the topbar */
+    right: 20px;                     /* Align it to the right edge */
+    top: 50%;                        /* Center vertically */
+    transform: translateY(-50%);     /* Adjust for vertical centering */
+    background-color: #4CAF50;       /* Green background */
+    color: white;                    /* White text */
+    border: none;                    /* No border */
+    padding: 10px 20px;              /* Spacing inside the button */
+    border-radius: 5px;              /* Rounded corners */
+    font-size: 14px;                 /* Font size */
+    cursor: pointer;                 /* Pointer cursor on hover */
+    transition: background 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  .contact-button:hover {
+    background-color: #45a049;       /* Darker green on hover */
+  }
+
+  
+
+
+
+
+
+
+
+
+
+  /* ========== Professional & Responsive CSS ========== */
+
+/* ========== Global Styles ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mali', sans-serif;
+    line-height: 1.6;
+}
+
+/* ========== Course Details Section ========== */
+.course-details {
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    margin-top: 50px;
+    text-align: center;
+    padding: 0 20px;  /* Added padding for better responsiveness */
+}
+
+/* ========== Course Name Section ========== */
+.course-name-div {
+    background-color: #3e3e3e;  /* Dark background for contrast */
+    margin-bottom: 24px;
+    padding: 20px 0; /* Added padding for better spacing */
+    border-radius: 8px; /* Added smooth rounded corners */
+}
+
+.ai-art-course {
+    color: #0e802d;  /* Bright green color for emphasis */
+    font-size: 2.5rem;  /* Responsive font size */
+    padding-left: 10%;  /* Relative padding for better responsiveness */
+    padding-right: 10%;
+    text-align: center;  /* Center text for mobile support */
+}
+
+/* ========== Course Description ========== */
+.course-description {
+    font-size: 1.5rem;  /* Relative font size for better scaling */
+    font-weight: 300;  /* Light weight for readability */
+    padding: 30px;
+    text-align: justify;  /* Justify for a clean, professional look */
+}
+
+/* ========== Course Detail 1 ========== */
+.course-detail1 {
+    background-color: #86d48a;  /* Soft green for visual separation */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px; /* Spacing between sections */
+}
+
+/* ========== Course Detail 2 ========== */
+.course-detail2 {
+    background-color: #9e943c;  /* Golden yellow for contrast */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.recorded-class-icon {
+    width: 100%;  /* Full width for mobile responsiveness */
+    max-width: 200px;  /* Limit image size on larger screens */
+    mix-blend-mode: multiply;  /* Blend effect for creative touch */
+}
+
+.recorded-class-text {
+    font-weight: 300;  /* Light font for visual hierarchy */
+    font-size: 1.25rem;  /* Relative font size for responsiveness */
+    margin-top: 15px;
+    text-align: center;  /* Centered for better mobile experience */
+}
+
+/* ========== Course Detail 3 ========== */
+.course-detail3 {
+    background-color: #ffffff;  /* Clean white background */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.brief {
+    font-size: 1.875rem;  /* Scales better for different devices */
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;  /* Justify for clean layout */
+}
+
+.brief-title {
+    font-size: 1.25rem;  /* Smaller font for title */
+    font-weight: bold;
+    text-align: center;  /* Center the title */
+    margin-bottom: 10px;
+}
+
+/* ========== Course Detail 4 ========== */
+.course-detail4 {
+    background-color: #bd7ba6;  /* Soft purple background */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+/* ========== Course Detail 5 ========== */
+.course-detail5 {
+    background-color: #f8ba8e;  /* Warm orange background */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+/* ========== Media Queries for Responsiveness ========== */
+@media (max-width: 768px) {
+    .ai-art-course {
+        font-size: 2rem;  /* Smaller font for mobile */
+        padding-left: 5%;  /* Reduced padding for smaller screens */
+        padding-right: 5%;
+    }
+
+    .course-description {
+        font-size: 1.25rem;  /* Slightly smaller font for mobile */
+    }
+
+    .recorded-class-icon {
+        width: 75%;  /* Reduced size for smaller screens */
+    }
+
+    .brief {
+        font-size: 1.5rem;  /* Smaller for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .ai-art-course {
+        font-size: 1.75rem;  /* Even smaller for tiny screens */
+    }
+
+    .course-description {
+        font-size: 1rem;  /* Make text readable on small screens */
+    }
+
+    .recorded-class-icon {
+        width: 100%;  /* Full width on small screens */
+    }
+
+    .brief {
+        font-size: 1.25rem;  /* Ensure text fits well on small screens */
+    }
+}  
+
+/* ========== Side Notes ========== */
+/**
+  * 1. Use `rem` instead of `px` for responsive font sizes.
+  * 2. Added media queries to ensure a mobile-friendly design.
+  * 3. Used `border-radius` for modern, professional-looking rounded sections.
+  * 4. Used `padding` inside elements to provide better space and layout.
+  * 5. Added hover effects where necessary to make buttons more interactive.
+  * 6. Justify text where needed for a more professional appearance.
+  * 7. Used `flexbox` for layout alignment to maintain responsiveness.
+  * 8. Font-sizes and padding dynamically adjust at breakpoints (768px, 480px).
+  * 9. Consistent margins and spacing between elements for a clean, readable layout.
+  * 10. Used `transform` for vertical centering where necessary.
+**/ 
